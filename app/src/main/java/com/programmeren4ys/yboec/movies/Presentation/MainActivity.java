@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
+
+
     /**
      * Aangeroepen door terugkerende Intents. Maakt het mogelijk om data
      * terug te ontvangen van een Intent.

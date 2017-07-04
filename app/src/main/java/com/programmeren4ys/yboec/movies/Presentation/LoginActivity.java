@@ -85,6 +85,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
     }
+
+
+
     private void handleLogin(String email, String password) {
         //
         // Maak een JSON object met username en password. Dit object sturen we mee
@@ -114,6 +117,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             // totdat het token expired.
                             try {
                                 String token = response.getString("token");
+                                Log.d(TAG, "token is " + token);
                                 String user_id = response.getString("userid");
 
                                 Context context = getApplicationContext();
